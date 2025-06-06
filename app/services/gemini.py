@@ -139,7 +139,7 @@ class GeminiResponseWrapper:
 class GeminiClient:
 
     AVAILABLE_MODELS = []
-    EXTRA_MODELS = os.environ.get("EXTRA_MODELS", "").split(",")
+    EXTRA_MODELS = os.environ.get("EXTRA_MODELS", "kingfall-ab-test").split(",")
 
     def __init__(self, api_key: str):
         self.api_key = api_key
